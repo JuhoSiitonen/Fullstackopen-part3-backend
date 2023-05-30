@@ -1,0 +1,1 @@
+This repository is made for Fullstackopen part 3 Phonebook React app, with frontend in build folder and a backend with simulated REST API HTTP requests in the requests folder.
