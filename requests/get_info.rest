@@ -1,1 +1,1 @@
-GET http://localhost:3001/info
+GET https://phonebook-fullstack-ih6b.onrender.com/info
