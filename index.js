@@ -49,11 +49,11 @@ app.delete('/api/persons/:id', (req, res, next) => {
 })
 
 app.put('/api/persons/:id', (req, res, next) => {
-  const {name, phonenumber} = req.body
+  const {name, number} = req.body
 
   Number.findByIdAndUpdate(
     req.params.id, 
-    {name, phonenumber}, 
+    {name, number}, 
     { new: true, runValidators: true, context: 'query' })
     .then(updatedNumber => {
       res.json(updatedNumber)
@@ -61,7 +61,7 @@ app.put('/api/persons/:id', (req, res, next) => {
     .catch(error => next(error))
 })
 
-app.post('/api/persons', (req, res) => {
+app.post('/api/persons', (req, res, next) => {
   const body = req.body
 
   const person = new Number({

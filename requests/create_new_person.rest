@@ -1,6 +1,7 @@
-POST https://phonebook-fullstack-ih6b.onrender.com/api/persons
+#POST https://phonebook-fullstack-ih6b.onrender.com/api/persons
+POST http://localhost:3001/api/persons 
 Content-Type: application/json
 
 {
-"name": "Juho", "number": "04056"
+"name": "Juho", "number": "034-55315"
 }
