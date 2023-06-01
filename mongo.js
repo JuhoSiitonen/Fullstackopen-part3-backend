@@ -29,7 +29,7 @@ if (name !== (undefined)) {
     number: phonenumber,
   })
 
-  number.save().then(result => {
+  number.save().then(() => {
     console.log(`added ${number.name} number ${number.number} to phonebook`)
     mongoose.connection.close()
   })
@@ -40,5 +40,5 @@ if (name !== (undefined)) {
       console.log(number.name, number.number)
     })
     mongoose.connection.close()
-    })
+  })
 }

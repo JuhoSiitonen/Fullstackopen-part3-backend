@@ -8,7 +8,8 @@
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:ui": "rm -rf build && cd C:/Users/juho_/OneDrive/Desktop/Fullstackopen/part2/puhelinluettelo && npm run build && cp -r build C:/Users/juho_/OneDrive/Desktop/fullstack_backend/Fullstackopen-part3-backend",
-    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "eslint": "^8.41.0",
     "nodemon": "^2.0.22"
   }
 }
